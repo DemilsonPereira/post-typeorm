@@ -17,7 +17,6 @@ class Server {
   }
 
   public routes() {
-    this.app.use(`${router}`)
     this.app.get('/', (request: Request, response: Response) => {
       response.send("Daddy On!");
     });

@@ -8,7 +8,7 @@ class PostService {
   }
 
   public create = () => {
-    return "Create From Service";
+    return "Index From Service";
   }
 
   public update = () => {
