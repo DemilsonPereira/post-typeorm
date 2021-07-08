@@ -11,15 +11,15 @@ class PostController {
     response.send(this.postService.index());
   }
 
-  public create(request: Request, response: Response) {
+  public create = async (request: Request, response: Response) => {
     response.send(this.postService.create());
   }
 
-  public update(request: Request, response: Response) {
+  public update = async (request: Request, response: Response) => {
     response.send(this.postService.update());
   }
 
-  public delete(request: Request, response: Response) {
+  public delete = async (request: Request, response: Response) => {
     response.send(this.postService.delete());
   }
 }

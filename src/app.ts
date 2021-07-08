@@ -1,6 +1,5 @@
 import express, { Request, Response } from 'express';
 import { router } from './routers';
-
 class Server {
   private app: express.Application;
 
