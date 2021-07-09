@@ -1,5 +1,6 @@
 import express, { Request, Response } from 'express';
 import { router } from './routers';
+import './database';
 class Server {
   private app: express.Application;
 
@@ -8,7 +9,6 @@ class Server {
     this.configuration();
     this.routes();
     this.app.use(express.json());
-    this.app.use(router);
   }
 
   public configuration() {
@@ -19,6 +19,7 @@ class Server {
     this.app.get('/', (request: Request, response: Response) => {
       response.send("Daddy On!");
     });
+    this.app.use(router);
   }
 
   public start() {

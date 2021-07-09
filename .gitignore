@@ -1,9 +1,3 @@
-# Webstorm stuff
-.idea
-
-# Ignoring Build folder
-build
-
 # Logs
 logs
 *.log
@@ -108,4 +102,3 @@ dist
 
 # TernJS port file
 .tern-port
-

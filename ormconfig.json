@@ -5,8 +5,13 @@
   "username": "blog",
   "password": "blog",
   "database": "blog",
-  "migrations": ["src/database/migrations/*.ts"],
-  "entities": ["src/entities/*.ts"],
+  "entities": [
+    "src/entities/*.ts"
+  ],
+  "autoSchemaSync": true,
+  "migrations": [
+    "src/database/migrations/*.ts"
+  ],
   "cli": {
     "migrationsDir": "src/database/migrations",
     "entitiesDir": "src/entities"

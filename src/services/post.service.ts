@@ -1,6 +1,11 @@
-class PostService {
-  constructor(){
+import { getConnection, getCustomRepository } from 'typeorm'
+import { PostsRepositories } from '../repositories/PostsRepositories';
 
+class PostService {
+  private postRepository: PostsRepositories;
+
+  constructor() {
+    this.postRepository = getConnection("blog").getCustomRepository(PostsRepositories)
   }
 
   public index = () => {
